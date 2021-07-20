@@ -23,11 +23,12 @@ class Router
     case action
     when 1 then @meals_controller.list
     when 2 then @meals_controller.add
-    when 3 then @customers_controller.list
-    when 4 then @customers_controller.add
-    # when 3 then @controller.import
-    # when 4 then @controller.mark_as_done
-    # when 5 then @controller.destroy
+    when 3 then @meals_controller.edit
+    when 4 then @meals_controller.destroy
+    when 5 then @customers_controller.list
+    when 6 then @customers_controller.add
+    when 7 then @customers_controller.edit
+    when 8 then @customers_controller.destroy
     when 0 then stop
     else
       puts "Please press 1, 2, 3, 4, 5 or 0"
@@ -41,13 +42,22 @@ class Router
   def display_tasks
     puts ""
     puts "What do you want to do next?"
+    display_meal_tasks
+    display_customer_tasks
+    puts "0 - Stop and exit the program"
+  end
+
+  def display_meal_tasks
     puts "1 - List all meals"
     puts "2 - Create a new meal"
-    puts "3 - List all customers"
-    puts "4 - Create a new customer"
-    # puts "3 - Import a recipe from AllRecipes"
-    # puts "4 - Mark recipe as done"
-    # puts "5 - Destroy a recipe"
-    puts "0 - Stop and exit the program"
+    puts "3 - Edit a meal"
+    puts "4 - Remove a meal"
+  end
+
+  def display_customer_tasks
+    puts "5 - List all customers"
+    puts "6 - Create a new customer"
+    puts "7 - Edit a customer"
+    puts "8 - Remove a customer"
   end
 end
