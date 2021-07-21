@@ -1,4 +1,9 @@
-✅ As a user I can list all meals
-✅ As a user I can add a meal
-As a user I can list all customers
-As a user I can add a customer
+- [✅] As a manager I can list all meals
+- [✅] As a manager I can add a meal
+- [✅] As a manager I can list all customers
+- [✅] As a manager I can add a customer
+- [✅] As a manager I can list undelivered orders
+- [✅] As a manager I can add an order
+
+- [✅] As a rider I can list my undelivered orders
+- [ ] As a rider I can mark my order as delivered
