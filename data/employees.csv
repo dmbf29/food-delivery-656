@@ -1,0 +1,4 @@
+id,username,password,role
+1,cheri,secret,manager
+2,kyle,secret,rider
+3,sae,secret,rider
